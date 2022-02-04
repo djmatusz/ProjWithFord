@@ -1,0 +1,20 @@
+from cs1lib import *
+
+bound_x_1_4_7 = 
+bound_y_1_4_7 =
+bound_x_2_5_8 =
+bound_y_2_5_8 =
+bound_x_3_6_9 =
+bound_y_3_6_9 =
+BUTTON_WIDTH =
+BUTTON_HEIGHT = 
+
+def main():
+  set_clear_color(0, 0, 0)
+  clear()
+  
+  button_1()
+
+
+def mpressed(mx, my):
+  if mx
