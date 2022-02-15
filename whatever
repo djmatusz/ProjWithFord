@@ -1,20 +1,23 @@
-from cs1lib import *
+def main(guess_word):
+    word = "Crane"
 
-bound_x_1_4_7 = 
-bound_y_1_4_7 =
-bound_x_2_5_8 =
-bound_y_2_5_8 =
-bound_x_3_6_9 =
-bound_y_3_6_9 =
-BUTTON_WIDTH =
-BUTTON_HEIGHT = 
+    if guess_word == word:
+        print("Correct!")
 
-def main():
-  set_clear_color(0, 0, 0)
-  clear()
-  
-  button_1()
+    if guess_word != word:
+        print("Ack! Not quite.")
 
+        for i in range(0, 5):
+            if guess_word[i] == word[i]:
+                print(f"Letter {i + 1} is right.")
+            if guess_word[i] != word[i]:
+                for j in range(0, 5):
+                    if guess_word[i] == word[j]:
+                        print(f"Letter {i + 1} is in the wrong place")
+                    else:
+                        print(f"Letter {i + 1} is incorrect.")
 
-def mpressed(mx, my):
-  if mx
+        print("The rest of the letters are wrong. Keep going!")
+
+answer = input("Guess the Word! ")
+main(answer)
